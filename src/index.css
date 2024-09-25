@@ -1,0 +1,121 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #F3DCDC; /* Background color from palette */
+  color: #333;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #F4E7FB; /* Light background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #E3AADD; /* Text color from palette */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #F5BCBA; /* Light pink input background */
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #C3C7F3; /* Button background from palette */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #C8A8E9; /* Slightly darker shade for hover effect */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li:nth-child(even) {
+  background-color: #F3DCDC; /* Alternating color from the palette */
+}
+
+li:nth-child(odd) {
+  background-color: #F4E7FB; /* Alternating color from the palette */
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+li button:first-of-type {
+  background-color: #E3AADD;
+  color: white;
+}
+
+li button:first-of-type:hover {
+  background-color: #F5BCBA;
+}
+
+li button:last-of-type {
+  background-color: #C3C7F3;
+  color: white;
+}
+
+li button:last-of-type:hover {
+  background-color: #C8A8E9;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  li button {
+    margin-top: 5px;
+  }
+}
